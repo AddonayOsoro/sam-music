@@ -295,7 +295,7 @@ class SongsView(ctk.CTkFrame):
 
     def load_images_and_names(self):
         # Load images
-        image_folder = "C:/Users/oaddo/Desktop/dev/PROJECTS/sam-music/assets/images"
+        image_folder = "assets/images"
         images = os.listdir(image_folder)
 
         # Constants for image dimensions and padding
