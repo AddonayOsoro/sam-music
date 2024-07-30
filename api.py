@@ -1,7 +1,10 @@
 import requests
 import os
+from dotenv import load_dotenv
 
-API_KEY = "Sbv90crb4zF3gbd0SdCEMZtKWZyDaE67j8OUz5MX7o4Tx3g0PrZ3NtFb"
+load_dotenv()
+
+API_KEY = "{API_KEY}"
 headers = {"Authorization": API_KEY}
 
 url = "https://api.pexels.com/v1/search"

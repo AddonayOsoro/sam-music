@@ -4,12 +4,14 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import requests
 from mutagen.easyid3 import EasyID3
 from mutagen.mp3 import MP3
+from dotenv import load_dotenv
 
+load_dotenv()
 # Set up Spotipy with your credentials
 sp = spotipy.Spotify(
     auth_manager=SpotifyClientCredentials(
-        client_id="08e2d80fcc3746bea6f8df1505f91394",
-        client_secret="13ea042e88ce4b23bbd5c37e4087f6ff",
+        client_id="{client_id}",
+        client_secret="{client_secret}",
     )
 )
 
